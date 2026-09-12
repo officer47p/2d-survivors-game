@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bokv4fu06d0dn" path="res://scenes/player/player.png" id="1_d6veg"]
 [ext_resource type="Script" uid="uid://byfwycffe10lx" path="res://scenes/player/player.gd" id="1_dovo2"]
+[ext_resource type="PackedScene" uid="uid://cvb6no2yslo31" path="res://scenes/ability/sword_ability_controller/sword_ability_controller.tscn" id="2_gmlin"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8afob"]
 radius = 5.0
@@ -9,6 +10,10 @@ radius = 5.0
 [node name="Player" type="CharacterBody2D" unique_id=269330977 groups=["player"]]
 collision_layer = 0
 script = ExtResource("1_dovo2")
+
+[node name="AbilityManager" type="Node" parent="." unique_id=1896853459]
+
+[node name="SwordAbilityController" parent="AbilityManager" unique_id=2091037098 instance=ExtResource("2_gmlin")]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=140758252]
 texture = ExtResource("1_d6veg")
