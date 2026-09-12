@@ -15,6 +15,18 @@ run/main_scene="uid://dd4ejod5qhtp1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="viewport"
+
+[global_group]
+
+player=""
+
 [input]
 
 move_left={
